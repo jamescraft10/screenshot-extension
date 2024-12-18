@@ -1,0 +1,19 @@
+{
+    "name": "Screenshot",
+    "description": "Screenshot",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    },
+    "content_scripts": [
+        {
+            "js": ["scripts/html2canvas.js", "scripts/script.js"],
+            "matches": [
+                "https://*/*"
+            ]
+        }
+    ]
+  }
+  
